@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  # The backend service in NODE
+  backend:
+    build: ./Lending-Backend
+
+  # The frontend build using NODE and served using NGINX
+  frontend:
+    build: ./Lending-Frontend
+    ports:
+      - 3000:3000
